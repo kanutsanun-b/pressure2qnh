@@ -1,4 +1,4 @@
-﻿# pressure2qnh version 0.0.1
+﻿# pressure2qnh version 1.0.0
 Correcting atmospheric pressure at station to find QNH
 
 ## Installation
@@ -7,6 +7,16 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pressur
 
 ```bash
 pip install pressure2qnh
+```
+# Solution for numpy error in Raspberry pi
+```bash
+ERROR: libf77blas.so.3: cannot open shared object file: No such file or directory
+
+SOLVE:
+sudo apt-get install libatlas-base-dev
+or
+pip3 uninstall numpy  # remove previously installed version
+apt install python3-numpy
 ```
 
 ## Usage
